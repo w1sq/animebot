@@ -1,0 +1,1044 @@
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 04:33:34] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 04:33:55] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR:app:Exception on /ada [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 13, in main
+    link = result[0]['results']['link']
+KeyError: 0
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 04:34:09] "[35m[1mGET /ada HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 04:34:22] "[33mGET /ada HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 04:34:23] "[33mGET /ada HTTP/1.1[0m" 404 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 13, in main
+    link = result[0]['results']['link']
+KeyError: 0
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 04:34:26] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 04:35:21] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 13, in main
+    link = result['results'][0]['link']
+KeyError: 'results'
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 04:35:59] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 04:36:10] "[33mGET /serial-22354 HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 04:36:35] "[33mGET /serial-22354 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 04:36:36] "[33mGET /serial-22354 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 04:36:36] "[33mGET /serial-22354 HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 04:37:09] "[37mGET /serial-22354 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 04:37:13] "[37mGET /serial-22355 HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /serial-22351 [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 04:37:17] "[35m[1mGET /serial-22351 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 04:37:24] "[37mGET /serial-22357 HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 04:37:45] "[37mGET /serial-22357 HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:21:32] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR:app:Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+KeyError: 'results'
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:21:32] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:26:34] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR:app:Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+KeyError: 'results'
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:26:35] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /serial-452654 [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:26:42] "[35m[1mGET /serial-452654 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+KeyError: 'results'
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:26:42] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:28:39] "[37mGET /serial-13443 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:28:39] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:28:39] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:29:53] "[37mGET /serial-13443 HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:31:18] "[37mGET /serial-22357 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:31:25] "[37mGET /serial-22357 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:31:25] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:31:25] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:32:38] "[37mGET /serial-22357 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:32:38] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:32:39] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:40:52] "[37mGET /serial-22357 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:43:34] "[37mGET /serial-22357 HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:47:37] "[37mGET /serial-22357 HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:49:37] "[37mGET /serial-22357 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:49:39] "[37mGET /serial-22357 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:49:39] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:50:56] "[37mGET /serial-22357 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:50:56] "[32mGET /static//main.js HTTP/1.1[0m" 308 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:50:57] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:50:57] "[37mGET /static/main.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:50:57] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:51:51] "[37mGET /serial-22357 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:51:56] "[37mGET /serial-22357 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:51:56] "[32mGET /static//main.js HTTP/1.1[0m" 308 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:51:56] "[37mGET /static/main.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:51:56] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:51:57] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:54:29] "[37mGET /serial-22357 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:54:29] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:54:30] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:54:35] "[37mGET /serial-22357 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:54:35] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:54:36] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:54:37] "[37mGET /serial-22357 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:54:48] "[37mGET /serial-22357 HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:55:15] "[37mGET /serial-22357 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:55:15] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:55:16] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:55:18] "[37mGET /serial-22357 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:55:18] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:55:18] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:57:25] "[37mGET /serial-22357 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:57:25] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:57:35] "[37mGET /serial-22357 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:57:35] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:57:36] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:58:23] "[37mGET /serial-22357 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:58:23] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:58:24] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:58:31] "[37mGET /serial-22357 HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:app:Exception on /serial-22357 [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\test\app.py", line 14, in main
+    return render_template("main.html",link = link,title = title)
+  File "C:\python\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\python\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\python\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\python\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\python\lib\site-packages\jinja2\loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\python\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\python\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: main.html
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:59:10] "[35m[1mGET /serial-22357 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\test\app.py", line 12, in main
+    link = result['results'][0]['link']
+KeyError: 'results'
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:59:11] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:59:36] "[37mGET /serial-22357 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:59:36] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 18:59:36] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:00:25] "[37mGET /serial-22357 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:00:25] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:00:25] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:03:02] "[37mGET /serial-22357 HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /serial-1 [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:03:07] "[35m[1mGET /serial-1 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+KeyError: 'results'
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:03:07] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:03:10] "[37mGET /serial-22357 HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /serial-23 [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:03:14] "[35m[1mGET /serial-23 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+KeyError: 'results'
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:03:14] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /serial-321313 [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:03:16] "[35m[1mGET /serial-321313 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+KeyError: 'results'
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:03:17] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /serial-1345 [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:03:22] "[35m[1mGET /serial-1345 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+KeyError: 'results'
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:03:23] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:03:28] "[37mGET /serial-31395 HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:34:00] "[37mGET /serial-31395 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:34:00] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:34:01] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:34:49] "[37mGET /serial-31395 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:34:49] "[37mGET /serial-31395 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:34:49] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:34:49] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:35:06] "[37mGET /serial-31395 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:35:06] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:35:06] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:35:08] "[37mGET /serial-31395 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:35:08] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:35:08] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:35:09] "[37mGET /serial-31395 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:35:09] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:35:09] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:35:11] "[37mGET /serial-31395 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:35:11] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:35:11] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:35:11] "[37mGET /serial-31395 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:35:11] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:35:12] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:35:36] "[37mGET /serial-31395 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:35:36] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:35:36] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:37:48] "[37mGET /serial-31395 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:37:49] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:37:49] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:38:40] "[37mGET /serial-31395 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:38:40] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:38:40] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:51:11] "[37mGET /serial-31395 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:51:11] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:51:11] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:52:02] "[37mGET /serial-31395 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:52:02] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:52:03] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:53:36] "[37mGET /serial-31395 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:53:36] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:53:37] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:53:39] "[37mGET /serial-31395 HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:56:26] "[37mGET /serial-31395 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:56:27] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 19:56:27] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 20:02:11] "[37mGET /serial-31395 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 20:02:12] "[37mGET /serial-31395 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 20:02:12] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 20:02:13] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:05:27] "[37mGET /serial-31395 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:05:28] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:05:28] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:08:14] "[37mGET /serial-31395 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:08:15] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:08:15] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:10:17] "[37mGET /serial-31395 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:10:17] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:10:18] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:10:23] "[37mGET /serial-31395 HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:12:17] "[37mGET /serial-31395 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:12:17] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:12:17] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+ERROR:app:Exception on /serial-31397 [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:13:17] "[35m[1mGET /serial-31397 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+KeyError: 'results'
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:13:18] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:13:21] "[37mGET /serial-31396 HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:14:22] "[37mGET /serial-31396 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:14:22] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:14:23] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:15:19] "[37mGET /serial-31395 HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /serial-31391 [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:15:22] "[35m[1mGET /serial-31391 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+KeyError: 'results'
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:15:23] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /serial-31390 [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:15:26] "[35m[1mGET /serial-31390 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+KeyError: 'results'
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:15:26] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /serial-31392 [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:15:29] "[35m[1mGET /serial-31392 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+KeyError: 'results'
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:15:29] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:15:32] "[37mGET /serial-31393 HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:22:29] "[37mGET /serial-31393 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:22:29] "[37mGET /serial-31393 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:22:29] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:22:29] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:26:46] "[37mGET /serial-31393 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:26:46] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 22:26:47] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 23:02:35] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 23:03:08] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 23:03:49] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 23:04:18] "[37mGET /serial-31393 HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 23:06:18] "[37mGET /serial-31393 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 23:06:19] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 23:06:19] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 23:06:51] "[37mGET /serial-31393 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 23:06:51] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 23:06:51] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 23:08:23] "[37mGET /serial-31393 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 23:08:24] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jun/2021 23:08:24] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 02:03:57] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR:app:Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+KeyError: 'results'
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 02:03:57] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /movie-34754 [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 02:04:25] "[35m[1mGET /movie-34754 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+KeyError: 'results'
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 02:04:26] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /movie-3475 [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 02:04:29] "[35m[1mGET /movie-3475 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+KeyError: 'results'
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 02:04:29] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /serial-347131 [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 02:04:38] "[35m[1mGET /serial-347131 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+KeyError: 'results'
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 02:04:38] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /serial-34713 [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 02:04:41] "[35m[1mGET /serial-34713 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+KeyError: 'results'
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 02:04:41] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /serial-3471â [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+KeyError: 'results'
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 02:04:48] "[35m[1mGET /serial-3471â HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+KeyError: 'results'
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 02:04:48] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /serial-3471g [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+KeyError: 'results'
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 02:04:53] "[35m[1mGET /serial-3471g HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+KeyError: 'results'
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 02:04:53] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /serial-34714 [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 02:04:56] "[35m[1mGET /serial-34714 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+KeyError: 'results'
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 02:04:56] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 02:05:56] "[37mGET /serial-22814 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 02:05:56] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 03:02:54] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR:app:Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\web\app.py", line 12, in main
+    link = result['results'][0]['link']
+KeyError: 'results'
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 03:02:55] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 03:03:06] "[37mGET /movie-53556 HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:22:43] "[37mGET /serial-21555 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:22:44] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:22:44] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:22:59] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:23:25] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:25:37] "[37mGET /serial-21555 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:25:37] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:25:38] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:25:39] "[37mGET /serial-21555 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:25:39] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:25:40] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:25:40] "[37mGET /serial-21555 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:25:40] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:25:41] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:25:42] "[37mGET /serial-21555 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:25:42] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:25:42] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:25:42] "[37mGET /serial-21555 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:25:42] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:25:43] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:25:43] "[37mGET /serial-21555 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:25:43] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:25:43] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:25:44] "[37mGET /serial-21555 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:25:44] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:25:44] "[37mGET /serial-21555 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:25:44] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:25:45] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:25:47] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:25:58] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:27:14] "[37mGET /serial-21555 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:27:14] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:27:27] "[37mGET /serial-21555 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:27:27] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:27:28] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:27:28] "[37mGET /serial-21555 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:27:28] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:27:29] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:27:29] "[37mGET /serial-21555 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:27:29] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:27:29] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:27:30] "[37mGET /serial-21555 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:27:30] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:27:30] "[37mGET /serial-21555 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:27:30] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:27:30] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:34:00] "[37mGET /movie-53556 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:34:00] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:34:01] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:42:01] "[37mGET /serial-13443 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 04:42:48] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 05:01:29] "[37mGET /serial-26246 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 05:01:39] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 05:01:46] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2021 05:03:40] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -

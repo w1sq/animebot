@@ -1,0 +1,68 @@
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-6' coro=<Dispatcher._process_polling_updates() done, defined at C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=OperationalError('no such table: user_info')>
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "c:\Users\Artem\OneDrive\all_python\freelance\bot\main.py", line 56, in start
+    if not cur.execute('''SELECT id FROM user_info
+sqlite3.OperationalError: no such table: user_info
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 383, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\python\lib\site-packages\aiogram\bot\bot.py", line 97, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\python\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\super\AppData\Roaming\Python\Python39\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\super\AppData\Roaming\Python\Python39\site-packages\aiohttp\client.py", line 544, in _request
+    await resp.start(conn)
+  File "C:\Users\super\AppData\Roaming\Python\Python39\site-packages\aiohttp\client_reqrep.py", line 905, in start
+    self._continue = None
+  File "C:\Users\super\AppData\Roaming\Python\Python39\site-packages\aiohttp\helpers.py", line 656, in __exit__
+    raise asyncio.TimeoutError from None
+asyncio.exceptions.TimeoutError
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 383, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\python\lib\site-packages\aiogram\bot\bot.py", line 97, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\python\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\super\AppData\Roaming\Python\Python39\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\super\AppData\Roaming\Python\Python39\site-packages\aiohttp\client.py", line 544, in _request
+    await resp.start(conn)
+  File "C:\Users\super\AppData\Roaming\Python\Python39\site-packages\aiohttp\client_reqrep.py", line 905, in start
+    self._continue = None
+  File "C:\Users\super\AppData\Roaming\Python\Python39\site-packages\aiohttp\helpers.py", line 656, in __exit__
+    raise asyncio.TimeoutError from None
+asyncio.exceptions.TimeoutError
