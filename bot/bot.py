@@ -8,9 +8,10 @@ from aiogram.types import ReplyKeyboardRemove, \
     InlineKeyboardMarkup, InlineKeyboardButton, BotCommand
 import sqlite3
 from aiogram.dispatcher.filters.state import State, StatesGroup
-from searcher import Searcher 
+import re
+from searcher import Searcher
 
-searcher =  Searcher
+searcher =  Searcher()
 
 
 with open('bot/key.txt','r') as file:
@@ -47,7 +48,7 @@ def generate_inline_keyboard (*answer):
     return keyboard
 
 general_keyboard = ReplyKeyboardMarkup(resize_keyboard=True).row\
-(KeyboardButton('🔎Найти сериал'),KeyboardButton('🔎Найти аниме')).row(KeyboardButton('⭐Избранное'),KeyboardButton('⚙Настройки'))
+(KeyboardButton('🔎Найти сериал'),KeyboardButton('🔎Найти мультик')).row(KeyboardButton('⭐Избранное'),KeyboardButton('⚙Настройки'))
 
 search_series_keyboard = InlineKeyboardMarkup(resize_keyboard=True).row\
 (InlineKeyboardButton(text= '🔎Название',callback_data='name_search_series'),InlineKeyboardButton(text='🔎По ссылке',callback_data='link_search_series'),InlineKeyboardButton(text='🎯Фильтр',callback_data='filter_series'))
@@ -63,6 +64,7 @@ link_processing_series_keyboard = InlineKeyboardMarkup(resize_keyboard=True).row
 
 link_processing_anime_keyboard = InlineKeyboardMarkup(resize_keyboard=True).row\
 (InlineKeyboardButton(text='❌Отмена', callback_data='cancel_processing_anime'),InlineKeyboardButton(text=' 🔄Попробовать снова',callback_data='retry_processing_anime'))
+
 
 
 @dp.message_handler(commands=['start'])
@@ -85,7 +87,7 @@ async def search(message):
     ,reply_markup=search_series_keyboard,parse_mode='Markdown')
 
 
-@dp.message_handler(text='🔎Найти аниме')
+@dp.message_handler(text='🔎Найти мультик')
 async def search(message):
     chat_id = message.chat.id
     await message.delete()
@@ -120,11 +122,11 @@ async def settings(message):
 
 
 async def name_search_series(message):
-    pass
-
+    await message.answer('Введите название сериал, который хотите посмотреть')
 
 async def name_search_anime(message):
-    pass
+    await message.answer('Введите название аниме, которое хотите посмотреть')
+
 
 async def link_search_anime(message):
     chat_id = message.chat.id
@@ -137,14 +139,26 @@ async def link_search_anime(message):
 
 @dp.message_handler(state=FormLinkSearchAnime.answer)
 async def link_processing_anime(message,state):
-    if 'imdb.com' in message:
-        pass
-    elif 'kinopoisk.ru' in message:
-        pass
-    elif 'shikimori.one' in message:
-        pass
+    if 'imdb.com' in str(message):
+        title = await searcher.search_imdb_id(str(message),types='anime')
+        for num, i in enumerate(title):
+            anime_result_inline_keyboard = InlineKeyboardMarkup(resize_keyboard=True).add(InlineKeyboardButton(text='🍿Смотреть',url=f'http://127.0.0.1:5000/{i.id}')).add(InlineKeyboardButton(text='✅Добавить в мой список аниме',callback_data=f'add_to_favorites_{i.imdb_id}')).add(InlineKeyboardButton(text='🔎Поиск по названию',callback_data='name_search_anime'))
+            await message.answer(i,reply_markup=anime_result_inline_keyboard,parse_mode='html')
+        await state.finish()
+    elif 'kinopoisk.ru' in str(message):
+        title = await searcher.search_kinopoisk_id(str(message),types='anime')
+        for num, i in enumerate(title):
+            anime_result_inline_keyboard = InlineKeyboardMarkup(resize_keyboard=True).add(InlineKeyboardButton(text='🍿Смотреть',url=f'http://127.0.0.1:5000/{i.id}')).add(InlineKeyboardButton(text='✅Добавить в мой список аниме',callback_data=f'add_to_favorites_{i.imdb_id}')).add(InlineKeyboardButton(text='🔎Поиск по названию',callback_data='name_search_anime'))
+            await message.answer(i,reply_markup=anime_result_inline_keyboard,parse_mode='html')
+        await state.finish()
+    elif 'shikimori.one' in str(message):
+        title = await searcher.search_shikimori_id(str(message),types='anime')
+        for num, i in enumerate(title):
+            anime_result_inline_keyboard = InlineKeyboardMarkup(resize_keyboard=True).add(InlineKeyboardButton(text='🍿Смотреть',url=f'http://127.0.0.1:5000/{i.id}')).add(InlineKeyboardButton(text='✅Добавить в мой список аниме',callback_data=f'add_to_favorites_{i.imdb_id}')).add(InlineKeyboardButton(text='🔎Поиск по названию',callback_data='name_search_anime'))
+            await message.answer(i,reply_markup=anime_result_inline_keyboard,parse_mode='html')
+        await state.finish()
     else:
-        message.answer('Вы ввели неправильную ссылку',reply_markup=link_processing_anime_keyboard)
+        await message.answer('Вы ввели неправильную ссылку',reply_markup=link_processing_anime_keyboard)
 
 
 async def link_search_series(message):
@@ -155,6 +169,30 @@ async def link_search_series(message):
                                     shikimori.one',parse_mode='Markdown')
     await FormLinkSearchSeries.answer.set()
 
+
+
+@dp.message_handler(state=FormLinkSearchSeries.answer)
+async def link_processing_anime(message,state):
+    if 'imdb.com' in str(message):
+        title = await searcher.search_imdb_id(str(message),types='anime-serial')
+        for num, i in enumerate(title):
+            anime_result_inline_keyboard = InlineKeyboardMarkup(resize_keyboard=True).add(InlineKeyboardButton(text='🍿Смотреть',url=f'http://127.0.0.1:5000/{i.id}')).add(InlineKeyboardButton(text='✅Добавить в мой список аниме',callback_data=f'add_to_favorites_{i.imdb_id}')).add(InlineKeyboardButton(text='🔎Поиск по названию',callback_data='name_search_anime'))
+            await bot.send_photo(message.chat.id, i.poster_image,i,reply_markup=anime_result_inline_keyboard)
+        await state.finish()
+    elif 'kinopoisk.ru' in str(message):
+        title = await searcher.search_kinopoisk_id(str(message),types='anime-serial')
+        for num, i in enumerate(title):
+            anime_result_inline_keyboard = InlineKeyboardMarkup(resize_keyboard=True).add(InlineKeyboardButton(text='🍿Смотреть',url=f'http://127.0.0.1:5000/{i.id}')).add(InlineKeyboardButton(text='✅Добавить в мой список аниме',callback_data=f'add_to_favorites_{i.imdb_id}')).add(InlineKeyboardButton(text='🔎Поиск по названию',callback_data='name_search_anime'))
+            await bot.send_photo(message.chat.id, i.poster_image,i,reply_markup=anime_result_inline_keyboard)
+        await state.finish()
+    elif 'shikimori.one' in str(message):
+        title = await searcher.search_shikimori_id(str(message),types='anime-serial')
+        for num, i in enumerate(title):
+            anime_result_inline_keyboard = InlineKeyboardMarkup(resize_keyboard=True).add(InlineKeyboardButton(text='🍿Смотреть',url=f'http://127.0.0.1:5000/{i.id}')).add(InlineKeyboardButton(text='✅Добавить в мой список аниме',callback_data=f'add_to_favorites_{i.imdb_id}')).add(InlineKeyboardButton(text='🔎Поиск по названию',callback_data='name_search_anime'))
+            await bot.send_photo(message.chat.id, i.poster_image,i,reply_markup=anime_result_inline_keyboard)
+        await state.finish()
+    else:
+        await message.answer('Вы ввели неправильную ссылку',reply_markup=link_processing_anime_keyboard)
 
 
 async def filtr_series(message):
@@ -174,6 +212,9 @@ async def cancel_processing_series(message):
 async def cancel_processing_anime(message):
     pass
 
+
+async def add_to_favorites(message,id):
+    pass
 
 
 
@@ -198,13 +239,17 @@ async def unsubscribe(message):
 async def ans(call):
     message = call.message
     if call.data == 'name_search_series':
+        await call.message.delete()
         await name_search_series(message)
     elif call.data == 'name_search_anime':
+        await call.message.delete()
         await name_search_series(message)
     elif call.data == 'link_search_series':
+        await call.message.delete()
         await link_search_series(message)
     elif call.data == 'link_search_anime':
-        await link_search_series(message)
+        await call.message.delete()
+        await link_search_anime(message)
     elif call.data == 'filter_series':
         await filtr_series(message)
     elif call.data == 'filter_anime':
@@ -221,6 +266,9 @@ async def ans(call):
         await subscribe(message)
     elif call.data == 'cancel_processing':
         pass
+    elif 'add_to_favorites' in call.data :
+        id = re.findall(re.compile(r'tt\d+'), call.data)[0]
+        await add_to_favorites(message,id)
 
 async def main():
     await dp.start_polling()
