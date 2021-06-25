@@ -18,7 +18,7 @@ def global_init():
     conn_str = 'postgresql+psycopg2://postgres:Iamgood2005@127.0.0.1/telegrambot'
     print(f"Подключение к базе данных по адресу {conn_str}")
 
-    engine = sa.create_engine(conn_str,pool_size=25)
+    engine = sa.create_engine(conn_str)
     __factory = orm.sessionmaker(bind=engine)
 
     from . import __all_models
