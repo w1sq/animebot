@@ -43,10 +43,10 @@ class Anime(SqlAlchemyBase,SerializerMixin):
     
 
     def __str__(self):
-        return self.title
+        return self.status
     
     def __repr__(self):
-        return self.title
+        return self.status
 
 
     def to_message(self):

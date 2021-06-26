@@ -5,7 +5,7 @@ from db_data import db_session
 from db_data.__all_models import Anime
 
 app = Flask(__name__,template_folder='templates')
-app.config["SECRET_KEY"] = "anime"
+app.config["SECRET_KEY"] = "ikbgfWnhHUHSDFNA8w83tyy32"
 logging.basicConfig(level=logging.INFO, filename='applogs.log')
 db_session.global_init()
 
@@ -19,7 +19,7 @@ def main(id):
     link = anime.iframe_link
     title = anime.title
     img_link = anime.poster_link
-    page_link = f'http://animepoints.cc/{id}'
+    page_link = f'https://bot.animepoint.cc/{id}'
     return render_template("main.html",link = link,title = title, views = anime.views,id=id,img_link=img_link,page_link = page_link)
 
 if __name__ == "__main__":
