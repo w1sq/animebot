@@ -14,7 +14,9 @@ from aiogram.types.inline_query_result import InlineQueryResultArticle
 from db_data import db_session
 from db_data.__all_models import Users, Anime
 from searcher import Searcher
+import schedule
 
+import time
 
 searcher =  Searcher()
 
@@ -64,17 +66,10 @@ general_keyboard = ReplyKeyboardMarkup(resize_keyboard=True).row\
 (KeyboardButton('🔎 Найти сериал'),KeyboardButton('🔎 Найти мультик')).row(KeyboardButton('🆕 Новинки'),KeyboardButton('⭐ Избранное')).row(KeyboardButton('⚙ Настройки'))
 
 search_series_keyboard = InlineKeyboardMarkup(resize_keyboard=True).row\
-(InlineKeyboardButton(text= '🔎 Название',switch_inline_query_current_chat="#serial "),).row(InlineKeyboardButton(text='🔎 Кинопоиск',switch_inline_query_current_chat="#kp_serial "),InlineKeyboardButton(text='🔎 IMDB',switch_inline_query_current_chat="#imd_serial "),InlineKeyboardButton(text='🔎 Shikimori',switch_inline_query_current_chat="#shik_serial ")).row(InlineKeyboardButton(text='🔎 По ссылке',switch_inline_query_current_chat="#link_series "),InlineKeyboardButton(text='🎯 Фильтр',callback_data='filter_series'))
+(InlineKeyboardButton(text= '🔠 Название',switch_inline_query_current_chat="#serial "),).row(InlineKeyboardButton(text='🔎 Кинопоиск',switch_inline_query_current_chat="#kinp_serial "),InlineKeyboardButton(text='🔎 IMDB',switch_inline_query_current_chat="#imd_serial "),InlineKeyboardButton(text='🔎 Shikimori',switch_inline_query_current_chat="#shik_serial ")).row(InlineKeyboardButton(text='🌐 По ссылке',switch_inline_query_current_chat="#link_series "))
 
 search_anime_keyboard = InlineKeyboardMarkup(resize_keyboard=True).row\
-(InlineKeyboardButton(text='🔎 Название',switch_inline_query_current_chat="#anime ")).row(InlineKeyboardButton(text='🔎 Кинопоиск',switch_inline_query_current_chat="#kp_anime "),InlineKeyboardButton(text='🔎 IMDB',switch_inline_query_current_chat="#imdb_anime "),InlineKeyboardButton(text='🔎 Shikimori',switch_inline_query_current_chat="#shk_anime ")).row(InlineKeyboardButton(text='🔎 По ссылке',switch_inline_query_current_chat="#link_anime "),InlineKeyboardButton(text='🎯 Фильтр',callback_data='filter_anime'))
-
-filter_anime_keyboard = InlineKeyboardMarkup(resize_keyboard=True).row\
-(InlineKeyboardButton(text='🎭 Жанр', callback_data='genre'),InlineKeyboardButton(text='📅 Год выпуска', callback_data='date')).row(InlineKeyboardButton(text='Очистить фильтр',callback_data='clear_filters'))
-
-filter_series_keyboard = InlineKeyboardMarkup(resize_keyboard=True).row\
-(InlineKeyboardButton(text='🎭 Жанр', callback_data='genre'),InlineKeyboardButton(text='📅 Год выпуска', callback_data='date')).row(InlineKeyboardButton(text='Очистить фильтр',callback_data='clear_filters'))
-
+(InlineKeyboardButton(text='🔠 Название',switch_inline_query_current_chat="#anime ")).row(InlineKeyboardButton(text='🔎 Кинопоиск',switch_inline_query_current_chat="#kp_anime "),InlineKeyboardButton(text='🔎 IMDB',switch_inline_query_current_chat="#imdb_anime "),InlineKeyboardButton(text='🔎 Shikimori',switch_inline_query_current_chat="#shk_anime ")).row(InlineKeyboardButton(text='🌐 По ссылке',switch_inline_query_current_chat="#link_anime "))
 
 new_keyboard = InlineKeyboardMarkup(resize_keyboard=True).row(InlineKeyboardButton(text='Показать новинки',switch_inline_query_current_chat="#new "))
 
@@ -105,9 +100,8 @@ async def cancel_handler(state: FSMContext):
     await state.finish()
 
 
-async def send_titles(titles,query,cache_time=1,text='✅ Добавить в мой список аниме',callback_data='add_to_favorites'):
+async def send_titles(titles,query,cache_time=1,text='✅ Добавить в мой список аниме',callback_data='add_to_favorites', next_offset=''):
     results = []
-    db_sess = db_session.create_session()
     for num,i in enumerate(titles):
         try:
             results.append(
@@ -152,7 +146,8 @@ async def send_titles(titles,query,cache_time=1,text='✅ Добавить в м
         results=results,
         cache_time=cache_time,
         switch_pm_text="Перейти в бот",
-        switch_pm_parameter="start"
+        switch_pm_parameter="start",
+        next_offset=next_offset
     )
 
 
@@ -167,44 +162,68 @@ async def inline_handler(query: types.InlineQuery):
 @dp.inline_handler(text="", state="*")
 @dp.inline_handler(text="#new", state="*")
 async def inline_handler(query: types.InlineQuery):
-    titles = await searcher.news()
-    await send_titles(titles,query,cache_time=1)
+    if query.offset:
+        titles, next = await searcher.load_next_page(query.offset)
+    else:
+        titles, next = await searcher.news()
+    if next:
+        next = next.split('=')[2]
+    await send_titles(titles,query,cache_time=86400, next_offset=next)
 
 
 @dp.inline_handler(lambda query: query.query.startswith('#all'), state="*")
 async def inline_handler(query: types.InlineQuery):
-    titles = await searcher.search(str(query.query).strip().lower()[4:])
-    await send_titles(titles,query)
-
-
-@dp.inline_handler(lambda query: query.query.startswith('#shk_serial'), state="*")
-async def inline_handler(query: types.InlineQuery):
-    titles = await searcher.search(str(query.query).strip().lower()[11:],types='anime-serial',sort='shikimori_rating')
-    await send_titles(titles,query)
+    if query.offset:
+        titles, next = await searcher.load_next_page(query.offset)
+    else:
+        titles, next = await searcher.search(phraze=str(query.query).strip().lower()[4:])
+    if next:
+        next = next.split('=')[2]
+    await send_titles(titles,query,cache_time=1, next_offset=next)
 
 
 @dp.inline_handler(lambda query: query.query.startswith('#anime'), state="*")
 async def inline_handler(query: types.InlineQuery):
-    titles = await searcher.search(str(query.query).strip().lower()[6:],types='anime')
-    await send_titles(titles,query)
+    if query.offset:
+        titles, next = await searcher.load_next_page(query.offset)
+    else:
+        titles, next = await searcher.search(phraze=str(query.query).strip().lower()[6:],types='anime')
+    if next:
+        next = next.split('=')[2]
+    await send_titles(titles,query,cache_time=1, next_offset=next)
 
 
 @dp.inline_handler(lambda query: query.query.startswith('#kp_anime'), state="*")
 async def inline_handler(query: types.InlineQuery):
-    titles = await searcher.search(str(query.query).strip().lower()[9:],types='anime',sort='kinopoisk_rating')
-    await send_titles(titles,query)
+    if query.offset:
+        titles, next = await searcher.load_next_page(query.offset)
+    else:
+        titles, next = await searcher.load_anime(types='anime',sort='kinopoisk_rating')
+    if next:
+        next = next.split('=')[2]
+    await send_titles(titles,query,cache_time=2592000, next_offset=next)
 
 
 @dp.inline_handler(lambda query: query.query.startswith('#imdb_anime'), state="*")
 async def inline_handler(query: types.InlineQuery):
-    titles = await searcher.search(str(query.query).strip().lower()[11:],types='anime',sort='imdb_rating')
-    await send_titles(titles,query)
+    if query.offset:
+        titles, next = await searcher.load_next_page(query.offset)
+    else:
+        titles, next = await searcher.load_anime(types='anime',sort='imdb_rating')
+    if next:
+        next = next.split('=')[2]
+    await send_titles(titles,query,cache_time=2592000, next_offset=next)
 
 
 @dp.inline_handler(lambda query: query.query.startswith('#shk_anime'), state="*")
 async def inline_handler(query: types.InlineQuery):
-    titles = await searcher.search(str(query.query).strip().lower()[10:],types='anime',sort='shikimori_rating')
-    await send_titles(titles,query)
+    if query.offset:
+        titles, next = await searcher.load_next_page(query.offset)
+    else:
+        titles, next = await searcher.load_anime(types='anime',sort='shikimori_rating')
+    if next:
+        next = next.split('=')[2]
+    await send_titles(titles,query,cache_time=2592000, next_offset=next)
 
 @dp.inline_handler(lambda query: query.query.startswith('#link_anime'), state="*")
 async def inline_handler(query: types.InlineQuery):
@@ -215,31 +234,54 @@ async def inline_handler(query: types.InlineQuery):
         titles = await searcher.search_kinopoisk_id(link,types='anime')
     elif 'shikimori.one' in link:
         titles = await searcher.search_shikimori_id(link,types='anime')
+    else:
+        titles = []
     await send_titles(titles,query)
 
 
 @dp.inline_handler(lambda query: query.query.startswith('#serial'), state="*")
 async def inline_handler(query: types.InlineQuery):
-    titles = await searcher.search(str(query.query).strip().lower()[7:],types='anime-serial')
-    await send_titles(titles,query)
+    if query.offset != '':
+        titles, next = await searcher.load_next_page(query.offset)
+    else:
+        titles, next = await searcher.search(phraze=str(query.query).strip().lower()[7:],types='anime-serial')
+    if next:
+        next = next.split('=')[2]
+    await send_titles(titles,query,cache_time=1, next_offset=next)
 
 
 @dp.inline_handler(lambda query: query.query.startswith('#kinp_serial'), state="*")
 async def inline_handler(query: types.InlineQuery):
-    titles = await searcher.search(str(query.query).strip().lower()[12:],types='anime-serial',sort='kinopoisk_rating')
-    await send_titles(titles,query)
+    if query.offset:
+        titles, next = await searcher.load_next_page(query.offset)
+    else:
+        titles, next = await searcher.load_anime(types='anime-serial',sort='kinopoisk_rating')
+    if next:
+        next = next.split('=')[2]
+    await send_titles(titles,query,cache_time=2592000, next_offset=next)
 
 
 @dp.inline_handler(lambda query: query.query.startswith('#imd_serial'), state="*")
 async def inline_handler(query: types.InlineQuery):
-    titles = await searcher.search(str(query.query).strip().lower()[11:],types='anime-serial',sort='imdb_rating')
-    await send_titles(titles,query)
+    if query.offset:
+        titles, next = await searcher.load_next_page(query.offset)
+    else:
+        titles, next = await searcher.load_anime(types='anime-serial',sort='imdb_rating')
+    if next:
+        next = next.split('=')[2]
+    await send_titles(titles,query,cache_time=2592000, next_offset=next)
 
 
 @dp.inline_handler(lambda query: query.query.startswith('#shik_serial'), state="*")
 async def inline_handler(query: types.InlineQuery):
-    titles = await searcher.search(str(query.query).strip().lower()[12:],types='anime-serial',sort='shikimori_rating')
-    await send_titles(titles,query)
+    if query.offset:
+        titles, next = await searcher.load_next_page(query.offset)
+    else:
+        titles, next = await searcher.load_anime(types='anime-serial',sort='shikimori_rating')
+    if next:
+        next = next.split('=')[2]
+    await send_titles(titles,query,cache_time=2592000, next_offset=next)
+
 
 @dp.inline_handler(lambda query: query.query.startswith('#link_series'), state="*")
 async def inline_handler(query: types.InlineQuery):
@@ -250,11 +292,13 @@ async def inline_handler(query: types.InlineQuery):
         titles = await searcher.search_kinopoisk_id(link,types='anime-serial')
     elif 'shikimori.one' in link:
         titles = await searcher.search_shikimori_id(link,types='anime-serial')
+    else:
+        titles = []
     await send_titles(titles,query)
 
 
 @dp.message_handler(text='🔎 Найти сериал')
-async def search(message):
+async def search_serial(message):
     await message.delete()
     await message.answer('''Поиск
     
@@ -262,19 +306,16 @@ async def search(message):
 
     Поиск по названию - просто вводим название сериала
 
-    Кинопоиск, Imdb, Shikimori - поиск сериала,но с сортировкой
-    по рейтинку определенной площадки
+    Кинопоиск, Imdb, Shikimori - лучшие сериалы по версии 
+    одной из этих площадок
 
     Поиск по ссылке - нужно прислать ссылку на сериал с
-    <a href="www.kinopoisk.ru">Кинопоиска</a>, <a href="www.imdb.com">Imdb</a> или <a href="shikimori.one">Shikimori</a>
-
-    Фильтр - если еще не определились что смотреть, 
-    здесь можно отфильтровать сериалы по некоторым фильтрам.'''
+    <a href="www.kinopoisk.ru">Кинопоиска</a>, <a href="www.imdb.com">Imdb</a> или <a href="shikimori.one">Shikimori</a>'''
     ,reply_markup=search_series_keyboard,parse_mode='html',disable_web_page_preview=True)
 
 
 @dp.message_handler(text='🔎 Найти мультик')
-async def search(message):
+async def search_mult(message):
     await message.delete()
     await message.answer('''Поиск
     
@@ -282,14 +323,11 @@ async def search(message):
 
     Поиск по названию - просто вводим название аниме
 
-    Кинопоиск, Imdb, Shikimori - поиск аниме,но с сортировкой
-    по рейтинку определенной площадки
+    Кинопоиск, Imdb, Shikimori - лучшие аниме по версии
+    одной из этих площадок
 
     Поиск по ссылке - нужно прислать ссылку на аниме с
-    <a href="www.kinopoisk.ru">Кинопоиска</a>, <a href="www.imdb.com">Imdb</a> или <a href="shikimori.one">Shikimori</a>
-
-    Фильтр - если еще не определились что смотреть, 
-    здесь можно отфильтровать аниме по некоторым фильтрам.'''
+    <a href="www.kinopoisk.ru">Кинопоиска</a>, <a href="www.imdb.com">Imdb</a> или <a href="shikimori.one">Shikimori</a>'''
     ,reply_markup=search_anime_keyboard,parse_mode='html',disable_web_page_preview=True)
 
 
@@ -322,15 +360,6 @@ async def settings(message):
         settings_keyboard = generate_inline_keyboard(['✅ Включить уведомления','subscribe'])
     await bot.send_message(user_id,'*Настройки* \n\nЗдесь вы можете выключить уведомления о новых сериях своих любимых тайтлов',reply_markup=settings_keyboard,parse_mode='Markdown')
 
-
-async def filtr_series(message):
-    chat_id = message.chat.id
-    await bot.send_message(chat_id,'Укажите параметры фильтра сериалов',reply_markup=filter_series_keyboard,parse_mode='Markdown')
-
-
-async def filtr_anime(message):
-    chat_id = message.chat.id
-    await bot.send_message(chat_id,'Укажите параметры фильтра аниме',reply_markup=filter_anime_keyboard,parse_mode='Markdown')
 
 async def add_to_favorites(user_id,id):
     db_sess = db_session.create_session()
@@ -370,11 +399,7 @@ async def unsubscribe(message):
 @dp.callback_query_handler(lambda call: True)
 async def ans(call):
     message = call.message
-    if call.data == 'filter_series':
-        await filtr_series(message)
-    elif call.data == 'filter_anime':
-        await filtr_series(message)
-    elif call.data == 'unsubscribe':
+    if call.data == 'unsubscribe':
         await bot.edit_message_reply_markup(call.from_user.id, call.message.message_id, reply_markup= generate_inline_keyboard(['✅ Включить уведомления','subscribe']))
         await call.answer('Вы успешно отключили уведомления')
         await unsubscribe(message)
@@ -395,10 +420,20 @@ async def ans(call):
         user_id = call.from_user.id
         id = call.data.split('#')[1]
         await add_to_favorites(user_id,id)
-        
-        
+
+# def timer_sending(bot,loop):
+#     asyncio.run_coroutine_threadsafe(photo_sender(bot),loop)
+#     time.sleep(10)
+
+# schedule.every().day.at('06:54').do(lambda: timer_sending(bot,loop))
+# def schedule_cycle():
+#     while True:
+#         schedule.run_pending()
+#         time.sleep(1)
+
 async def main():
     await dp.start_polling()
 
 if __name__ == '__main__':
+    loop = asyncio.get_event_loop()
     asyncio.run(main())

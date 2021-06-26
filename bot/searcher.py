@@ -80,27 +80,44 @@ class Searcher():
         self.imdb_link_exp = re.compile(r'tt\d+')
         self.kinopoisk_link_exp = re.compile(r'\/(\d+)\/')
         self.shikimory_link_exp = re.compile(r'\/(\d+)\-')
+    
+    async def load_next_page(self,url):
+        url = f'https://kodikapi.com/list?token=7f129085d2f372833fcc5e2116e4d0a4&page={url}'
+        results = await self._get(url)
+        titles = self._group(results['results'])
+        try:
+            return titles,results['next_page']
+        except Exception:
+            return titles,''
 
-    async def search(self, phraze, types:str='anime-serial, anime',sort=''):  # поиск по названию аниме
+    async def load_anime(self,types,sort=''):
         params = copy(self.api_params)
-        params.update({'types': types})
+        params.update({'types': types,'sort':sort,'order':'desc','limit':50})
+        results = await self._get(self.list_url, params)
+        titles = self._group(results['results'])
+        if results['next_page']:
+            return titles,results['next_page']
+        else:
+            return titles,''
+
+    async def search(self, phraze, types:str='anime-serial, anime'):  # поиск по названию аниме
+        params = copy(self.api_params)
+        params.update({'types': types,'limit':50})
         if str(phraze).strip() != '':
-            if not sort:
-                params.update({'title': phraze})
-                results = await self._get(self.search_url, params)
-            else:
-                params.update({'title': phraze,'sort':sort})
-                results = await self._get(self.list_url, params)
-                print(results)
+            params.update({'title': phraze})
+            results = await self._get(self.search_url, params)
+            if results['total'] == 0:
+                return [],''
+            titles = self._group_by_name(results['results'],phraze)
         else:
             results = await self._get(self.list_url, params)
-        if results['total'] == 0:
-            raise self.NotFoundError('No anime with this name')
-
-        all_titles = results['results']
-        titles = self._group_by_name(all_titles,phraze)
-
-        return titles
+            if results['total'] == 0:
+                return [],''
+            titles = self._group(results['results'])
+        try:
+            return titles,results['next_page']
+        except Exception:
+            return titles,''
 
     async def _get(self,link,params={}):   # загрузка данных из API
         params['token'] = self.token
@@ -115,7 +132,7 @@ class Searcher():
         db_sess = db_session.create_session()
         try:
             for key, group in groupby(all_titles, key=lambda x: x['shikimori_id']):
-                group = list(group)[0]            
+                group = list(group)[0]        
                 if all([title_lower in group['title'].lower() for title_lower in title.lower().split()]):
                     group = Title(group)
                     titles.append(group)
@@ -134,6 +151,7 @@ class Searcher():
                     if all([title_lower in group['title'].lower() for title_lower in title.lower().split()]):
                         group = Title(group)
                         titles.append(group)
+
         for title in titles:
             anime = db_sess.query(Anime).filter(Anime.kodik_id == title.kodik_id).first()
             if not anime:
@@ -168,13 +186,16 @@ class Searcher():
                 titles.append(group)
         except Exception:
             try:
+                titles=[]
                 for key, group in groupby(all_titles, key=lambda x: x['imdb_id']):
                     group = Title(list(group)[0])
                     titles.append(group)
             except Exception:
+                titles=[]
                 for key, group in groupby(all_titles, key=lambda x: x['title']):
                     group = Title(list(group)[0])
                     titles.append(group)
+            
         for title in titles:
             anime = db_sess.query(Anime).filter(Anime.kodik_id == title.kodik_id).first()
             if not anime:
@@ -205,38 +226,35 @@ class Searcher():
         params.update({'types':'anime,anime-serial','sort':'year'})
         results = await self._get(self.list_url, params)
         titles = self._group(results['results'])
-        return titles
+        if results['next_page']:
+            return titles,results['next_page']
+        else:
+            return titles,''
 
  
     async def search_imdb_id(self, link, types:str='anime-serial'):   # поиск по ссылке imdb
         service_id = re.findall(self.imdb_link_exp, link)[0]
         if not service_id:
-            raise self.Bad_link('Bad link')
+            return [],''
         params = copy(self.api_params)
         params.update({'imdb_id': service_id, 'types': types})
         results = await self._get(self.search_url, params)
     
         if results['total'] == 0:
-            raise self.NotFoundError('No anime on this link')
+            return [],''
         titles = self._group(results['results'])
         return titles
-    
-    class NotFoundError(Exception):
-        pass
-    
-    class Bad_link(Exception):
-        pass
 
 
     async def search_kinopoisk_id(self, link, types:str='anime-serial'):   # поиск по ссылке kinopoisk
         service_id = re.findall(self.kinopoisk_link_exp, link)[0]
         if not service_id:
-            raise self.Bad_link('Bad link')
+            return [],''
         params = copy(self.api_params)
         params.update({'kinopoisk_id': service_id, 'types': types})
         results = await self._get(self.search_url, params)
         if results['total'] == 0:
-            raise self.NotFoundError('No anime on this link')
+            return [],''
 
         titles = self._group(results['results'])
 
@@ -246,27 +264,11 @@ class Searcher():
     async def search_shikimori_id(self, link, types:str='anime-serial'):   # поиск по ссылке imdb
         service_id = re.findall(self.shikimory_link_exp, link)[0]
         if not service_id:
-            raise self.Bad_link('Bad link')
+            return [],''
         params = copy(self.api_params)
         params.update({'shikimori_id': service_id, 'types': types})
         results = await self._get(self.search_url, params)
         if results['total'] == 0:
-            raise self.NotFoundError('No anime on this link')
+            return [],''
         titles = self._group(results['results'])
-        return titles
-
-
-    async def filter_search(self,filters:dict, types:str='anime-serial'):
-        params = copy(self.api_params)
-        params.update({'types': types})
-        for anime_filter in filters:
-            params.update({anime_filter['param']: anime_filter['value']})
-        results = await self._get(self.search_url, params)
-
-        if results['total'] == 0:
-            raise self.NotFoundError('No anime with these filters')
-
-        all_titles = results['results']
-        titles = self._group(all_titles)
-
         return titles

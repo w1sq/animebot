@@ -833,3 +833,10 @@ INFO:werkzeug:127.0.0.1 - - [25/Jun/2021 05:25:08] "[37mGET /id/serial-35419 HT
 INFO:werkzeug:127.0.0.1 - - [25/Jun/2021 05:25:09] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
 INFO:werkzeug:127.0.0.1 - - [25/Jun/2021 05:25:09] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
 INFO:werkzeug:127.0.0.1 - - [25/Jun/2021 05:25:14] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2021 03:13:32] "[37mGET /id/serial-9811 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2021 03:13:33] "[37mGET /static/css/main.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2021 03:13:33] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2021 03:20:40] "[37mGET /id/movie-74647 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2021 03:20:43] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Jun/2021 03:23:47] "[33mGET /assets/images/favicon.png HTTP/1.1[0m" 404 -
