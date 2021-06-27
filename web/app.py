@@ -28,4 +28,4 @@ def pageNotFound(error):
 
 
 if __name__ == "__main__":
-    serve(app,'0.0.0.0',port=5000)
+    serve(app,host = '0.0.0.0',port=5000)
