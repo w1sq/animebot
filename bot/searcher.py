@@ -132,7 +132,7 @@ class Searcher():
         db_sess = db_session.create_session()
         try:
             for key, group in groupby(all_titles, key=lambda x: x['shikimori_id']):
-                group = list(group)[0]        
+                group = list(group)[0]
                 if all([title_lower in group['title'].lower() for title_lower in title.lower().split()]):
                     group = Title(group)
                     titles.append(group)
@@ -140,14 +140,14 @@ class Searcher():
             try:
                 titles=[]
                 for key, group in groupby(all_titles, key=lambda x: x['imdb_id']):
-                    group = list(group)[0]            
+                    group = list(group)[0]
                     if all([title_lower in group['title'].lower() for title_lower in title.lower().split()]):
                         group = Title(group)
                         titles.append(group)
             except Exception:
                 titles=[]
                 for key, group in groupby(all_titles, key=lambda x: x['title']):
-                    group = list(group)[0]            
+                    group = list(group)[0]
                     if all([title_lower in group['title'].lower() for title_lower in title.lower().split()]):
                         group = Title(group)
                         titles.append(group)
@@ -176,7 +176,6 @@ class Searcher():
         return titles
 
     
-    
     def _group(self,all_titles):
         titles:List[Title] = []
         db_sess = db_session.create_session()
@@ -195,7 +194,7 @@ class Searcher():
                 for key, group in groupby(all_titles, key=lambda x: x['title']):
                     group = Title(list(group)[0])
                     titles.append(group)
-            
+
         for title in titles:
             anime = db_sess.query(Anime).filter(Anime.kodik_id == title.kodik_id).first()
             if not anime:
@@ -216,7 +215,7 @@ class Searcher():
                 )
                 db_sess.add(anime)
                 db_sess.commit()
-                db_sess.close()    
+                db_sess.close()
         return titles
 
 

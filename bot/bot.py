@@ -119,8 +119,7 @@ async def send_titles(titles,query,cache_time=1,text='✅ Добавить в м
                 )
             )
         except Exception:
-            results.append(
-                InlineQueryResultArticle(
+            results.append(InlineQueryResultArticle(
                     id=num+1,
                     title=i.title,
                     thumb_url= i.poster_link,
