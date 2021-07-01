@@ -9,7 +9,7 @@ app.config["SECRET_KEY"] = "ikbgfWnhHUHSDFNA8w83tyy32"
 logging.basicConfig(level=logging.INFO, filename='applogs.log')
 db_session.global_init()
 
-@app.route('/id/<id>')
+app.route('/id/<id>')
 def main(id):
     db_sess = db_session.create_session()
     anime = db_sess.query(Anime).filter(Anime.kodik_id == id).first()
