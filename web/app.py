@@ -12,6 +12,7 @@ db_session.global_init()
 app.route('/id/<id>')
 def main(id):
     db_sess = db_session.create_session()
+    print('Успешно подключено')
     anime = db_sess.query(Anime).filter(Anime.kodik_id == id).first()
     anime.views += 1
     db_sess.commit()
