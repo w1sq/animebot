@@ -1,0 +1,1337 @@
+{
+  "time": "2ms",
+  "total": 38,
+  "results": [
+    {
+      "id": "serial-23568",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/23568/97e976d83b2582821865e00164462fde/720p",
+      "title": "Токийский гуль OVA",
+      "title_orig": "OVA Tokyo Ghoul",
+      "other_title": "Токийский гуль: Джек",
+      "translation": { "id": 654, "title": "AniFilm", "type": "voice" },
+      "year": 2015,
+      "last_season": 1,
+      "last_episode": 2,
+      "episodes_count": 2,
+      "kinopoisk_id": "953181",
+      "imdb_id": "tt5265536",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=8358",
+      "quality": "BDRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2020-03-11T02:09:47Z",
+      "updated_at": "2020-03-11T02:09:47Z",
+      "seasons": {
+        "1": {
+          "link": "//aniqit.com/season/56656/ac68d1722999e0cbb6dbf6bedfb07ed8/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/606588/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/606588/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/606588/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/606588/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/606588/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-22354",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/22354/58876786636a6085977280441f3ef1de/720p",
+      "title": "Токийский гуль OVA",
+      "title_orig": "OVA Tokyo Ghoul",
+      "other_title": "Токийский гуль: Джек",
+      "translation": { "id": 767, "title": "SHIZA Project", "type": "voice" },
+      "year": 2015,
+      "last_season": 1,
+      "last_episode": 2,
+      "episodes_count": 2,
+      "kinopoisk_id": "953181",
+      "imdb_id": "tt5265536",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=8358",
+      "quality": "BDRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2020-02-04T08:32:58Z",
+      "updated_at": "2020-02-04T08:32:58Z",
+      "seasons": {
+        "1": {
+          "link": "//aniqit.com/season/55128/f75243079ffced763aabdc25edc1eb50/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/579056/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/579056/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/579056/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/579056/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/579056/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-7971",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/7971/3848eda0425f14f010975c36e3eabf69/720p",
+      "title": "Токийский гуль OVA",
+      "title_orig": "OVA Tokyo Ghoul",
+      "other_title": "Токийский гуль: Джек",
+      "translation": { "id": 609, "title": "AniDUB", "type": "voice" },
+      "year": 2015,
+      "last_season": 1,
+      "last_episode": 2,
+      "episodes_count": 2,
+      "kinopoisk_id": "953181",
+      "imdb_id": "tt5265536",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=8358",
+      "quality": "BDRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2017-12-29T14:02:39Z",
+      "updated_at": "2020-01-11T22:05:30Z",
+      "seasons": {
+        "1": {
+          "link": "//aniqit.com/season/33274/e52356eff6361dda1233a87990d96e44/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/208209/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/208209/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/208209/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/208209/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/208209/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-9946",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/9946/e2818c564093f2d6d1428db8e398c012/720p",
+      "title": "Токийский гуль: Перерождение [ТВ-1]",
+      "title_orig": "Tokyo Ghoul:Re",
+      "other_title": "Токийский гуль [ТВ-3]",
+      "translation": { "id": 735, "title": "2x2", "type": "voice" },
+      "year": 2018,
+      "last_season": 3,
+      "last_episode": 12,
+      "episodes_count": 12,
+      "kinopoisk_id": "841681",
+      "imdb_id": "tt8213522",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=9420",
+      "shikimori_id": "36511",
+      "quality": "HDTVRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2018-04-04T20:18:53Z",
+      "updated_at": "2019-11-23T13:27:01Z",
+      "seasons": {
+        "3": {
+          "link": "//aniqit.com/season/36382/a0a7e0c8348ac53075b37bff1af0f13c/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/267631/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/267631/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/267631/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/267631/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/267631/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-26923",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/26923/088d3b404ea097d49b35695a88a12e01/720p",
+      "title": "Токийский гуль: Перерождение [ТВ-1]",
+      "title_orig": "Tokyo Ghoul:Re",
+      "other_title": "Токийский гуль [ТВ-3]",
+      "translation": { "id": 739, "title": "Animedia", "type": "voice" },
+      "year": 2018,
+      "last_season": 3,
+      "last_episode": 12,
+      "episodes_count": 12,
+      "kinopoisk_id": "841681",
+      "imdb_id": "tt8213522",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=9420",
+      "shikimori_id": "36511",
+      "quality": "HDTVRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2020-06-18T14:32:08Z",
+      "updated_at": "2020-06-18T14:32:08Z",
+      "seasons": {
+        "3": {
+          "link": "//aniqit.com/season/60916/6d092bbf84b78ff8379e54c8f2272d37/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/670663/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/670663/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/670663/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/670663/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/670663/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-13443",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/13443/9c331402fdac27039027995d7b483264/720p",
+      "title": "Токийский гуль: Перерождение [ТВ-2]",
+      "title_orig": "Tokyo Ghoul:Re",
+      "other_title": "Токийский гуль [ТВ-4]",
+      "translation": { "id": 739, "title": "Animedia", "type": "voice" },
+      "year": 2018,
+      "last_season": 4,
+      "last_episode": 12,
+      "episodes_count": 12,
+      "kinopoisk_id": "841681",
+      "imdb_id": "tt8213522",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=9678",
+      "shikimori_id": "37799",
+      "quality": "HDTVRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2018-11-27T18:38:55Z",
+      "updated_at": "2019-01-03T11:32:15Z",
+      "seasons": {
+        "4": {
+          "link": "//aniqit.com/season/42255/fb7c817b920d4ef0d3dd4568d112f861/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/357093/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/357093/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/357093/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/357093/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/357093/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-13233",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/13233/60fdbbdd6ebe2362f4f069fc13aa36a5/720p",
+      "title": "Токийский гуль: Перерождение [ТВ-2]",
+      "title_orig": "Tokyo Ghoul:Re",
+      "other_title": "Токийский гуль [ТВ-4]",
+      "translation": { "id": 610, "title": "AniLibria.TV", "type": "voice" },
+      "year": 2018,
+      "last_season": 4,
+      "last_episode": 12,
+      "episodes_count": 12,
+      "kinopoisk_id": "841681",
+      "imdb_id": "tt8213522",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=9678",
+      "shikimori_id": "37799",
+      "quality": "HDTVRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2018-11-13T14:49:59Z",
+      "updated_at": "2018-12-26T17:13:08Z",
+      "seasons": {
+        "4": {
+          "link": "//aniqit.com/season/42254/0c369520b609db172be77bd6cede7535/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/357086/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/357086/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/357086/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/357086/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/357086/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-9965",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/9965/37401eca8bb377402577449d90a5a459/720p",
+      "title": "Токийский гуль: Перерождение [ТВ-1]",
+      "title_orig": "Tokyo Ghoul:Re",
+      "other_title": "Токийский гуль [ТВ-3]",
+      "translation": { "id": 557, "title": "JAM", "type": "voice" },
+      "year": 2018,
+      "last_season": 3,
+      "last_episode": 12,
+      "episodes_count": 12,
+      "kinopoisk_id": "841681",
+      "imdb_id": "tt8213522",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=9420",
+      "shikimori_id": "36511",
+      "quality": "HDTVRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2018-04-05T20:33:46Z",
+      "updated_at": "2018-11-12T17:41:06Z",
+      "seasons": {
+        "3": {
+          "link": "//aniqit.com/season/36404/c6dc7bfeccb57393cdbcbecdee39cbba/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/267881/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/267881/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/267881/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/267881/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/267881/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-13235",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/13235/8f38ff0bfc302f4453c505abded5144e/720p",
+      "title": "Токийский гуль: Перерождение [ТВ-2]",
+      "title_orig": "Tokyo Ghoul:Re",
+      "other_title": "Токийский гуль [ТВ-4]",
+      "translation": { "id": 609, "title": "AniDUB", "type": "voice" },
+      "year": 2018,
+      "last_season": 4,
+      "last_episode": 12,
+      "episodes_count": 12,
+      "kinopoisk_id": "841681",
+      "imdb_id": "tt8213522",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=9678",
+      "shikimori_id": "37799",
+      "quality": "HDTVRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2018-11-13T14:50:08Z",
+      "updated_at": "2018-12-29T17:13:20Z",
+      "seasons": {
+        "4": {
+          "link": "//aniqit.com/season/41947/cc5d36131f52c7f610780d73a1a48a5f/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/351448/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/351448/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/351448/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/351448/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/351448/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-22813",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/22813/60b1560f114727313dc566eb8e181cab/720p",
+      "title": "Токийский гуль: Перерождение [ТВ-2]",
+      "title_orig": "Tokyo Ghoul:Re",
+      "other_title": "Токийский гуль [ТВ-4]",
+      "translation": { "id": 559, "title": "Kansai", "type": "voice" },
+      "year": 2018,
+      "last_season": 4,
+      "last_episode": 12,
+      "episodes_count": 12,
+      "kinopoisk_id": "841681",
+      "imdb_id": "tt8213522",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=9678",
+      "shikimori_id": "37799",
+      "quality": "WEB-DLRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2020-02-15T06:43:20Z",
+      "updated_at": "2020-02-15T06:43:20Z",
+      "seasons": {
+        "4": {
+          "link": "//aniqit.com/season/55714/249969a6e925c26c2e02a964146c852f/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/588196/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/588196/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/588196/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/588196/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/588196/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-22814",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/22814/03f3e9b7cb316965dad9a7320305b296/720p",
+      "title": "Токийский гуль: Перерождение [ТВ-1]",
+      "title_orig": "Tokyo Ghoul:Re",
+      "other_title": "Токийский гуль [ТВ-3]",
+      "translation": { "id": 559, "title": "Kansai", "type": "voice" },
+      "year": 2018,
+      "last_season": 3,
+      "last_episode": 12,
+      "episodes_count": 12,
+      "kinopoisk_id": "841681",
+      "imdb_id": "tt8213522",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=9420",
+      "shikimori_id": "36511",
+      "quality": "WEB-DLRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2020-02-15T07:02:00Z",
+      "updated_at": "2020-02-15T07:02:00Z",
+      "seasons": {
+        "3": {
+          "link": "//aniqit.com/season/55715/d801731337b293489c2b8e119fc27b55/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/588208/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/588208/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/588208/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/588208/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/588208/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-9945",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/9945/eb776f55705865c3056f62979417b100/720p",
+      "title": "Токийский гуль: Перерождение [ТВ-1]",
+      "title_orig": "Tokyo Ghoul:Re",
+      "other_title": "Токийский гуль [ТВ-3]",
+      "translation": { "id": 610, "title": "AniLibria.TV", "type": "voice" },
+      "year": 2018,
+      "last_season": 3,
+      "last_episode": 12,
+      "episodes_count": 12,
+      "kinopoisk_id": "841681",
+      "imdb_id": "tt8213522",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=9420",
+      "shikimori_id": "36511",
+      "quality": "HDTVRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2018-04-04T19:27:17Z",
+      "updated_at": "2018-11-07T17:42:46Z",
+      "seasons": {
+        "3": {
+          "link": "//aniqit.com/season/36381/84638badcb49ccff1b73a576ea40b316/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/267628/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/267628/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/267628/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/267628/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/267628/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-13234",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/13234/eee3c0daedfe1a9036378e8084ae5f5e/720p",
+      "title": "Токийский гуль: Перерождение [ТВ-2]",
+      "title_orig": "Tokyo Ghoul:Re",
+      "other_title": "Токийский гуль [ТВ-4]",
+      "translation": { "id": 735, "title": "2x2", "type": "voice" },
+      "year": 2018,
+      "last_season": 4,
+      "last_episode": 12,
+      "episodes_count": 12,
+      "kinopoisk_id": "841681",
+      "imdb_id": "tt8213522",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=9678",
+      "shikimori_id": "37799",
+      "quality": "HDTVRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2018-11-13T14:50:04Z",
+      "updated_at": "2019-11-23T13:27:57Z",
+      "seasons": {
+        "4": {
+          "link": "//aniqit.com/season/41946/ba3e103143040aa2de71cd45a8e45bbb/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/351443/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/351443/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/351443/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/351443/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/351443/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-7975",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/7975/02a742d9b17eaacdd61bc741323586fd/720p",
+      "title": "Токийский гуль [ТВ-2]",
+      "title_orig": "Tokyo Ghoul Root A",
+      "other_title": "Токийский упырь (2 сезон) / Токийский гуль 2",
+      "translation": { "id": 609, "title": "AniDUB", "type": "voice" },
+      "year": 2014,
+      "last_season": 2,
+      "last_episode": 12,
+      "episodes_count": 12,
+      "kinopoisk_id": "841681",
+      "imdb_id": "tt5497534",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=4177",
+      "shikimori_id": "27899",
+      "quality": "BDRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2017-12-29T14:09:36Z",
+      "updated_at": "2019-11-11T00:08:04Z",
+      "seasons": {
+        "2": {
+          "link": "//aniqit.com/season/33278/662ae202dc05694be872b7dd26109757/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/208247/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/208247/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/208247/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/208247/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/208247/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-22336",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/22336/a263154d633cfc47ba60b7bc0f1b53f0/720p",
+      "title": "Токийский гуль [ТВ-2]",
+      "title_orig": "Tokyo Ghoul Root A",
+      "other_title": "Токийский упырь (2 сезон) / Токийский гуль 2",
+      "translation": { "id": 767, "title": "SHIZA Project", "type": "voice" },
+      "year": 2014,
+      "last_season": 2,
+      "last_episode": 12,
+      "episodes_count": 12,
+      "kinopoisk_id": "841681",
+      "imdb_id": "tt5497534",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=4177",
+      "shikimori_id": "27899",
+      "quality": "BDRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2020-02-03T23:55:14Z",
+      "updated_at": "2020-02-04T22:24:14Z",
+      "seasons": {
+        "2": {
+          "link": "//aniqit.com/season/55108/6918155269f10abad52e29a0b05426f6/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/578761/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/578761/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/578761/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/578761/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/578761/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-26924",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/26924/0d92fcccf1889b11834013d205b26653/720p",
+      "title": "Токийский гуль [ТВ-2]",
+      "title_orig": "Tokyo Ghoul Root A",
+      "other_title": "Токийский упырь (2 сезон) / Токийский гуль 2",
+      "translation": { "id": 739, "title": "Animedia", "type": "voice" },
+      "year": 2014,
+      "last_season": 2,
+      "last_episode": 12,
+      "episodes_count": 12,
+      "kinopoisk_id": "841681",
+      "imdb_id": "tt5497534",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=4177",
+      "shikimori_id": "27899",
+      "quality": "HDTVRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2020-06-18T14:33:57Z",
+      "updated_at": "2020-06-18T14:33:57Z",
+      "seasons": {
+        "2": {
+          "link": "//aniqit.com/season/60917/371afb4ca22278dba44f37a1f21a7aa6/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/670675/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/670675/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/670675/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/670675/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/670675/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-7973",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/7973/e58aa41c429f6414397006a6440cca32/720p",
+      "title": "Токийский гуль [ТВ-2]",
+      "title_orig": "Tokyo Ghoul Root A",
+      "other_title": "Токийский упырь (2 сезон) / Токийский гуль 2",
+      "translation": { "id": 610, "title": "AniLibria.TV", "type": "voice" },
+      "year": 2014,
+      "last_season": 2,
+      "last_episode": 12,
+      "episodes_count": 12,
+      "kinopoisk_id": "841681",
+      "imdb_id": "tt5497534",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=4177",
+      "shikimori_id": "27899",
+      "quality": "HDTVRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2017-12-29T14:07:05Z",
+      "updated_at": "2021-05-10T10:17:23Z",
+      "seasons": {
+        "2": {
+          "link": "//aniqit.com/season/33276/5387d24ca480e38e66de789562f9ed77/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/208223/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/208223/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/208223/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/208223/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/208223/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-22303",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/22303/f3e7c2a9df5fb2b841fd35d46d6f68d0/720p",
+      "title": "Токийский гуль [ТВ-2]",
+      "title_orig": "Tokyo Ghoul Root A",
+      "other_title": "Токийский упырь (2 сезон) / Токийский гуль 2",
+      "translation": { "id": 559, "title": "Kansai", "type": "voice" },
+      "year": 2014,
+      "last_season": 2,
+      "last_episode": 12,
+      "episodes_count": 12,
+      "kinopoisk_id": "841681",
+      "imdb_id": "tt5497534",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=4177",
+      "shikimori_id": "27899",
+      "quality": "HDTVRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2020-02-03T18:50:12Z",
+      "updated_at": "2020-02-03T18:50:12Z",
+      "seasons": {
+        "2": {
+          "link": "//aniqit.com/season/55065/736ecde0ef2dd0228d701f3ba9f1a840/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/578280/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/578280/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/578280/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/578280/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/578280/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-26260",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/26260/d616f14917339d63f9d96b5f218cc7e6/720p",
+      "title": "Токийский гуль [ТВ-2]",
+      "title_orig": "Tokyo Ghoul Root A",
+      "other_title": "Токийский упырь (2 сезон) / Токийский гуль 2",
+      "translation": { "id": 654, "title": "AniFilm", "type": "voice" },
+      "year": 2014,
+      "last_season": 2,
+      "last_episode": 12,
+      "episodes_count": 12,
+      "kinopoisk_id": "841681",
+      "imdb_id": "tt5497534",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=4177",
+      "shikimori_id": "27899",
+      "quality": "HDTVRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2020-05-28T03:04:17Z",
+      "updated_at": "2020-05-28T03:04:17Z",
+      "seasons": {
+        "2": {
+          "link": "//aniqit.com/season/60077/fd2299b055711a9361684614d9a334ab/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/658191/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/658191/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/658191/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/658191/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/658191/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-33245",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/33245/285a8e9fb5ea57b42affc561421b3392/720p",
+      "title": "Токийский гуль [ТВ-2]",
+      "title_orig": "Tokyo Ghoul Root A",
+      "other_title": "Токийский упырь (2 сезон) / Токийский гуль 2",
+      "translation": { "id": 771, "title": "ZoneVision", "type": "voice" },
+      "year": 2014,
+      "last_season": 2,
+      "last_episode": 12,
+      "episodes_count": 12,
+      "kinopoisk_id": "841681",
+      "imdb_id": "tt5497534",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=4177",
+      "shikimori_id": "27899",
+      "quality": "BDRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2021-03-15T21:18:18Z",
+      "updated_at": "2021-03-15T21:18:18Z",
+      "seasons": {
+        "2": {
+          "link": "//aniqit.com/season/68877/3e2ca1c2e9a499ef74a7ebc1fb61eff6/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/801955/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/801955/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/801955/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/801955/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/801955/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-26246",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/26246/8ba4bcaadce62c445c7f78e001210b81/720p",
+      "title": "Токийский гуль [ТВ-1]",
+      "title_orig": "Tokyo Ghoul",
+      "other_title": "Токийский упырь (1 сезон)",
+      "translation": { "id": 654, "title": "AniFilm", "type": "voice" },
+      "year": 2014,
+      "last_season": 1,
+      "last_episode": 12,
+      "episodes_count": 12,
+      "kinopoisk_id": "841681",
+      "imdb_id": "tt3741634",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=2300",
+      "shikimori_id": "22319",
+      "quality": "BDRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2020-05-28T02:22:32Z",
+      "updated_at": "2020-05-28T02:22:32Z",
+      "seasons": {
+        "1": {
+          "link": "//aniqit.com/season/60061/d2860134d9004040ac19a04a1eb382ca/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/658001/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/658001/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/658001/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/658001/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/658001/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-26925",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/26925/7e79c7d7a6cb064992c26dc7255a4692/720p",
+      "title": "Токийский гуль [ТВ-1]",
+      "title_orig": "Tokyo Ghoul",
+      "other_title": "Токийский упырь (1 сезон)",
+      "translation": { "id": 739, "title": "Animedia", "type": "voice" },
+      "year": 2014,
+      "last_season": 1,
+      "last_episode": 12,
+      "episodes_count": 12,
+      "kinopoisk_id": "841681",
+      "imdb_id": "tt3741634",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=2300",
+      "shikimori_id": "22319",
+      "quality": "HDTVRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2020-06-18T14:35:19Z",
+      "updated_at": "2020-06-18T14:35:19Z",
+      "seasons": {
+        "1": {
+          "link": "//aniqit.com/season/60918/5790de63fb4ca22450593de1cae38d6b/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/670692/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/670692/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/670692/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/670692/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/670692/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-7974",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/7974/bb18e8ac0e961ebc2c5eb7f4ba2db236/720p",
+      "title": "Токийский гуль [ТВ-1]",
+      "title_orig": "Tokyo Ghoul",
+      "other_title": "Токийский упырь (1 сезон)",
+      "translation": { "id": 609, "title": "AniDUB", "type": "voice" },
+      "year": 2014,
+      "last_season": 1,
+      "last_episode": 12,
+      "episodes_count": 12,
+      "kinopoisk_id": "841681",
+      "imdb_id": "tt3741634",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=2300",
+      "shikimori_id": "22319",
+      "quality": "BDRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2017-12-29T14:08:24Z",
+      "updated_at": "2019-11-11T03:02:04Z",
+      "seasons": {
+        "1": {
+          "link": "//aniqit.com/season/33277/25d2470f39bfe71a2e3f98115956c7b0/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/208235/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/208235/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/208235/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/208235/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/208235/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-22305",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/22305/ae0beff65645fcd4a181e094e82e5333/720p",
+      "title": "Токийский гуль [ТВ-1]",
+      "title_orig": "Tokyo Ghoul",
+      "other_title": "Токийский упырь (1 сезон)",
+      "translation": { "id": 559, "title": "Kansai", "type": "voice" },
+      "year": 2014,
+      "last_season": 1,
+      "last_episode": 12,
+      "episodes_count": 12,
+      "kinopoisk_id": "841681",
+      "imdb_id": "tt3741634",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=2300",
+      "shikimori_id": "22319",
+      "quality": "HDTVRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2020-02-03T18:52:52Z",
+      "updated_at": "2020-02-03T18:52:52Z",
+      "seasons": {
+        "1": {
+          "link": "//aniqit.com/season/55069/031378fcfcaee43401d225a0a4e8f81f/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/578306/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/578306/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/578306/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/578306/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/578306/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-34288",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/34288/e71788c8615ed98ce2278a8ac8d92e94/720p",
+      "title": "Токийский гуль [ТВ-1]",
+      "title_orig": "Tokyo Ghoul",
+      "other_title": "Токийский упырь (1 сезон)",
+      "translation": { "id": 1679, "title": "Omori", "type": "voice" },
+      "year": 2014,
+      "last_season": 1,
+      "last_episode": 4,
+      "episodes_count": 4,
+      "kinopoisk_id": "841681",
+      "imdb_id": "tt3741634",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=2300",
+      "shikimori_id": "22319",
+      "quality": "HDTVRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2021-04-24T14:59:28Z",
+      "updated_at": "2021-06-04T15:18:56Z",
+      "seasons": {
+        "1": {
+          "link": "//aniqit.com/season/70103/14362dfa6838e14b16aa1c4e39580ed3/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/821201/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/821201/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/821201/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/821201/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/821201/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-7972",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/7972/1a096d7f1423a03ea9fd96d576f99254/720p",
+      "title": "Токийский гуль [ТВ-1]",
+      "title_orig": "Tokyo Ghoul",
+      "other_title": "Токийский упырь (1 сезон)",
+      "translation": { "id": 610, "title": "AniLibria.TV", "type": "voice" },
+      "year": 2014,
+      "last_season": 1,
+      "last_episode": 12,
+      "episodes_count": 12,
+      "kinopoisk_id": "841681",
+      "imdb_id": "tt3741634",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=2300",
+      "shikimori_id": "22319",
+      "quality": "HDTVRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2017-12-29T14:06:04Z",
+      "updated_at": "2019-12-11T18:58:59Z",
+      "seasons": {
+        "1": {
+          "link": "//aniqit.com/season/33275/6cd3fcf37f0af3553c6ac2c418f8527b/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/208211/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/208211/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/208211/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/208211/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/208211/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-21800",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/21800/a99fd5daa5d890bb73c91eaaa9eac508/720p",
+      "title": "Токийский гуль [ТВ-1]",
+      "title_orig": "Tokyo Ghoul",
+      "other_title": "Токийский упырь (1 сезон)",
+      "translation": { "id": 767, "title": "SHIZA Project", "type": "voice" },
+      "year": 2014,
+      "last_season": 1,
+      "last_episode": 12,
+      "episodes_count": 12,
+      "kinopoisk_id": "841681",
+      "imdb_id": "tt3741634",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=2300",
+      "shikimori_id": "22319",
+      "quality": "BDRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2020-01-27T12:13:55Z",
+      "updated_at": "2020-01-27T12:13:55Z",
+      "seasons": {
+        "1": {
+          "link": "//aniqit.com/season/54426/5541c82324e9ac9d85f19e49c2d9dd4e/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/569638/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/569638/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/569638/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/569638/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/569638/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-23099",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/23099/bf0620e8a49ea3f13c9b9de57b626ddf/720p",
+      "title": "Токийский гуль [ТВ-1]",
+      "title_orig": "Tokyo Ghoul",
+      "other_title": "Токийский упырь (1 сезон)",
+      "translation": { "id": 735, "title": "2x2", "type": "voice" },
+      "year": 2014,
+      "last_season": 1,
+      "last_episode": 12,
+      "episodes_count": 12,
+      "kinopoisk_id": "841681",
+      "imdb_id": "tt3741634",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=2300",
+      "shikimori_id": "22319",
+      "quality": "BDRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2020-02-23T17:02:35Z",
+      "updated_at": "2020-02-24T17:14:34Z",
+      "seasons": {
+        "1": {
+          "link": "//aniqit.com/season/56075/e75505bc0445f2b51dfd80c3aa2b052a/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/595021/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/595021/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/595021/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/595021/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/595021/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-7976",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/7976/94434399f11caf62ddaa4ab091bf56c4/720p",
+      "title": "Эхо террора",
+      "title_orig": "Zankyou No Terror",
+      "other_title": "Токийский террор / Terror in Resonance",
+      "translation": { "id": 610, "title": "AniLibria.TV", "type": "voice" },
+      "year": 2014,
+      "last_season": 1,
+      "last_episode": 11,
+      "episodes_count": 11,
+      "kinopoisk_id": "840972",
+      "imdb_id": "tt3613454",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=2245",
+      "shikimori_id": "23283",
+      "quality": "HDTVRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2017-12-29T14:10:55Z",
+      "updated_at": "2019-12-11T22:41:18Z",
+      "seasons": {
+        "1": {
+          "link": "//aniqit.com/season/33279/b3e02bee161e16d72d744a714f438410/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/208259/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/208259/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/208259/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/208259/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/208259/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-7671",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/7671/382a0bc30c5fb4d54d8445d1359cccb4/720p",
+      "title": "Эхо террора",
+      "title_orig": "Zankyou No Terror",
+      "other_title": "Токийский террор / Terror in Resonance",
+      "translation": { "id": 609, "title": "AniDUB", "type": "voice" },
+      "year": 2014,
+      "last_season": 1,
+      "last_episode": 11,
+      "episodes_count": 11,
+      "kinopoisk_id": "840972",
+      "imdb_id": "tt3613454",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=2245",
+      "shikimori_id": "23283",
+      "quality": "HDTVRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2017-12-26T10:38:04Z",
+      "updated_at": "2019-11-20T11:19:41Z",
+      "seasons": {
+        "1": {
+          "link": "//aniqit.com/season/32893/8ee3bd65b703d0a97c8249c62faf9ffb/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/201445/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/201445/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/201445/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/201445/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/201445/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-24965",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/24965/4da7fba61389aca7fe1fd13eb2912190/720p",
+      "title": "Эхо террора",
+      "title_orig": "Zankyou No Terror",
+      "other_title": "Токийский террор / Terror in Resonance",
+      "translation": { "id": 654, "title": "AniFilm", "type": "voice" },
+      "year": 2014,
+      "last_season": 1,
+      "last_episode": 11,
+      "episodes_count": 11,
+      "kinopoisk_id": "840972",
+      "imdb_id": "tt3613454",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=2245",
+      "shikimori_id": "23283",
+      "quality": "BDRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2020-04-21T01:36:35Z",
+      "updated_at": "2020-04-21T13:40:01Z",
+      "seasons": {
+        "1": {
+          "link": "//aniqit.com/season/58451/a236a89181021f6f48135dba61879e6e/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/633463/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/633463/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/633463/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/633463/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/633463/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-28963",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/28963/23ba30cca6872b66d69817a9fe16eb6a/720p",
+      "title": "Эхо террора",
+      "title_orig": "Zankyou No Terror",
+      "other_title": "Токийский террор / Terror in Resonance",
+      "translation": {
+        "id": 1315,
+        "title": "Мобильное телевидение",
+        "type": "voice"
+      },
+      "year": 2014,
+      "last_season": 1,
+      "last_episode": 11,
+      "episodes_count": 11,
+      "kinopoisk_id": "840972",
+      "imdb_id": "tt3613454",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=2245",
+      "shikimori_id": "23283",
+      "quality": "BDRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2020-08-24T15:13:23Z",
+      "updated_at": "2020-08-25T05:57:50Z",
+      "seasons": {
+        "1": {
+          "link": "//aniqit.com/season/63542/0206b82ccd354c71168498045aab5465/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/710653/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/710653/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/710653/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/710653/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/710653/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-21760",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/21760/3396fafa3d90ca44a63cf32ad10feab1/720p",
+      "title": "Эхо террора",
+      "title_orig": "Zankyou No Terror",
+      "other_title": "Токийский террор / Terror in Resonance",
+      "translation": { "id": 767, "title": "SHIZA Project", "type": "voice" },
+      "year": 2014,
+      "last_season": 1,
+      "last_episode": 11,
+      "episodes_count": 11,
+      "kinopoisk_id": "840972",
+      "imdb_id": "tt3613454",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=2245",
+      "shikimori_id": "23283",
+      "quality": "BDRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2020-01-26T21:33:49Z",
+      "updated_at": "2020-01-26T21:33:49Z",
+      "seasons": {
+        "1": {
+          "link": "//aniqit.com/season/54378/26246c44a25463d5b909beae3384d590/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/568740/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/568740/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/568740/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/568740/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/568740/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-28436",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/28436/c940cf357c88a73e86aeb2ccdc3a739f/720p",
+      "title": "Эхо террора",
+      "title_orig": "Zankyou No Terror",
+      "other_title": "Токийский террор / Terror in Resonance",
+      "translation": { "id": 999, "title": "OpenDub", "type": "voice" },
+      "year": 2014,
+      "last_season": 1,
+      "last_episode": 11,
+      "episodes_count": 11,
+      "kinopoisk_id": "840972",
+      "imdb_id": "tt3613454",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=2245",
+      "shikimori_id": "23283",
+      "quality": "BDRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2020-08-06T16:08:01Z",
+      "updated_at": "2020-08-06T16:10:24Z",
+      "seasons": {
+        "1": {
+          "link": "//aniqit.com/season/62888/8a6d391c28d5c6b48563a3d6253331dd/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/700166/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/700166/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/700166/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/700166/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/700166/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-28435",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/28435/2dea350ad8aa9a4b2cd656663c83d6d9/720p",
+      "title": "Эхо террора",
+      "title_orig": "Zankyou No Terror",
+      "other_title": "Токийский террор / Terror in Resonance",
+      "translation": { "id": 761, "title": "Onibaku", "type": "voice" },
+      "year": 2014,
+      "last_season": 1,
+      "last_episode": 11,
+      "episodes_count": 11,
+      "kinopoisk_id": "840972",
+      "imdb_id": "tt3613454",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=2245",
+      "shikimori_id": "23283",
+      "quality": "BDRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2020-08-06T16:06:53Z",
+      "updated_at": "2020-08-06T16:06:53Z",
+      "seasons": {
+        "1": {
+          "link": "//aniqit.com/season/62887/182fcd75e1ca10fa7a7416ba02b8a289/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/700155/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/700155/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/700155/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/700155/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/700155/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-28433",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/28433/88dd28ac6e3b3abf61bb3a84ad385509/720p",
+      "title": "Эхо террора",
+      "title_orig": "Zankyou No Terror",
+      "other_title": "Токийский террор / Terror in Resonance",
+      "translation": { "id": 922, "title": "Akari Group", "type": "voice" },
+      "year": 2014,
+      "last_season": 1,
+      "last_episode": 11,
+      "episodes_count": 11,
+      "kinopoisk_id": "840972",
+      "imdb_id": "tt3613454",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=2245",
+      "shikimori_id": "23283",
+      "quality": "BDRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2020-08-06T15:15:46Z",
+      "updated_at": "2020-08-06T16:05:47Z",
+      "seasons": {
+        "1": {
+          "link": "//aniqit.com/season/62885/346c4d338d44ceb306ec39d5e4a13ebb/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/700138/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/700138/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/700138/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/700138/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/700138/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-21555",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/21555/0d782a184c8c486d73a29a55298024a9/720p",
+      "title": "Токийский мраморный шоколад",
+      "title_orig": "Tokyo Marble Chocolate",
+      "other_title": "東京マーブルチョコレート",
+      "translation": { "id": 767, "title": "SHIZA Project", "type": "voice" },
+      "year": 2007,
+      "last_season": 1,
+      "last_episode": 2,
+      "episodes_count": 2,
+      "kinopoisk_id": "416525",
+      "imdb_id": "tt1239461",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=6653",
+      "shikimori_id": "3088",
+      "quality": "BDRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2020-01-21T15:05:51Z",
+      "updated_at": "2020-01-21T15:05:51Z",
+      "seasons": {
+        "1": {
+          "link": "//aniqit.com/season/54139/e97fab1338025462d7d63c7f5967bf28/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/565644/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/565644/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/565644/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/565644/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/565644/5.jpg"
+      ]
+    },
+    {
+      "id": "serial-20833",
+      "type": "anime-serial",
+      "link": "//aniqit.com/serial/20833/7dab3a4fc0315dd8adc43dd8e35201c2/720p",
+      "title": "Токийский мраморный шоколад",
+      "title_orig": "Tokyo Marble Chocolate",
+      "other_title": "東京マーブルチョコレート",
+      "translation": { "id": 609, "title": "AniDUB", "type": "voice" },
+      "year": 2007,
+      "last_season": 1,
+      "last_episode": 2,
+      "episodes_count": 2,
+      "kinopoisk_id": "416525",
+      "imdb_id": "tt1239461",
+      "worldart_link": "http://www.world-art.ru/animation/animation.php?id=6653",
+      "shikimori_id": "3088",
+      "quality": "BDRip 720p",
+      "camrip": false,
+      "blocked_countries": [],
+      "blocked_seasons": {},
+      "created_at": "2020-01-07T18:51:03Z",
+      "updated_at": "2020-01-07T18:51:03Z",
+      "seasons": {
+        "1": {
+          "link": "//aniqit.com/season/53274/467c26970390e0dcaa9f744984434c23/720p"
+        }
+      },
+      "screenshots": [
+        "https://i.kodik.biz/screenshots/seria/553659/1.jpg",
+        "https://i.kodik.biz/screenshots/seria/553659/2.jpg",
+        "https://i.kodik.biz/screenshots/seria/553659/3.jpg",
+        "https://i.kodik.biz/screenshots/seria/553659/4.jpg",
+        "https://i.kodik.biz/screenshots/seria/553659/5.jpg"
+      ]
+    }
+  ]
+}
