@@ -109,7 +109,7 @@ async def send_titles(titles,query,cache_time=1,text='✅ Добавить в м
                     id=num+1,
                     title=i.title,
                     thumb_url= i.poster_link,
-                    description=f'{i.imdb_rating} {i.kinopoisk_rating}',
+                    description=f'{i.imdb_rating} {i.kinopoisk_rating}\n{i.year}',
                     reply_markup=InlineKeyboardMarkup(resize_keyboard=True).add(InlineKeyboardButton(text='🍿 Смотреть',url=f'https://bot.animepoint.cc/id/{i.kodik_id}')).add(InlineKeyboardButton(text=text,callback_data=f'{callback_data}#{i.kodik_id}')).add(InlineKeyboardButton(text='🔎 Поиск по названию',switch_inline_query_current_chat="#all ")),
                     #reply_markup=InlineKeyboardMarkup(resize_keyboard=True).add(InlineKeyboardButton(text='🍿 Смотреть',url=f'http://45.147.198.210:5000/id/{i.kodik_id}')).add(InlineKeyboardButton(text=text,callback_data=f'{callback_data}#{i.kodik_id}')).add(InlineKeyboardButton(text='🔎 Поиск по названию',switch_inline_query_current_chat="#all ")),
                     input_message_content=InputTextMessageContent(
@@ -123,7 +123,7 @@ async def send_titles(titles,query,cache_time=1,text='✅ Добавить в м
                     id=num+1,
                     title=i.title,
                     thumb_url= i.poster_link,
-                    description=f'{i.imdb_rating} {i.kinopoisk_rating}',
+                    description=f'{i.imdb_rating} {i.kinopoisk_rating}\n{i.year}',
                     reply_markup=InlineKeyboardMarkup(resize_keyboard=True).add(InlineKeyboardButton(text='🍿 Смотреть',url=f'https://bot.animepoint.cc/id/{i.kodik_id}')).add(InlineKeyboardButton(text=text,callback_data=f'{callback_data}#{i.kodik_id}')).add(InlineKeyboardButton(text='🔎 Поиск по названию',switch_inline_query_current_chat="#all ")),
                     #reply_markup=InlineKeyboardMarkup(resize_keyboard=True).add(InlineKeyboardButton(text='🍿 Смотреть',url=f'http://45.147.198.210:5000/id/{i.kodik_id}')).add(InlineKeyboardButton(text=text,callback_data=f'{callback_data}#{i.kodik_id}')).add(InlineKeyboardButton(text='🔎 Поиск по названию',switch_inline_query_current_chat="#all ")),
                     input_message_content=InputTextMessageContent(

@@ -19,7 +19,7 @@ def main(id):
     title = anime.title
     img_link = anime.poster_link
     page_link = f'https://bot.animepoint.cc/id/{id}'
-    return render_template("main.html",link = link,title = title, views = anime.views,id=id,img_link=img_link,page_link = page_link)
+    return render_template("1.html",link = link,title = title, views = anime.views,id=id,img_link=img_link,page_link = page_link)
 
 @app.errorhandler(404)
 def pageNotFound(error):
