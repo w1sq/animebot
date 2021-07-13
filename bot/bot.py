@@ -45,6 +45,11 @@ class FormNameSearchSeries(StatesGroup):
     answer = State()
 
 
+class FormMessage(StatesGroup):
+    text = State()
+    photo = State()
+    Features = State()
+
 
 def generate_keyboard (*answer):
     keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
@@ -362,6 +367,22 @@ async def settings(message):
     await bot.send_message(user_id,'*Настройки* \n\nЗдесь вы можете выключить уведомления о новых сериях своих любимых тайтлов',reply_markup=settings_keyboard,parse_mode='Markdown')
 
 
+@dp.message_handler(text='8956')
+async def favorite(message):
+    chat_id = message.chat.id
+    await message.delete()
+    await FormMessage.text.set()
+    await bot.send_message(chat_id,'Введите текст сообщения',reply_markup=InlineKeyboardMarkup(resize_keyboard=True).add(InlineKeyboardButton(text='Пропустить',callback_data='skip')))
+
+
+@dp.message_handler(state=FormMessage.text)
+async def process_name(message: types.Message, state: FSMContext):
+    async with state.proxy() as data:
+       data['text'] = message.text
+    await FormMessage.next()
+    await message.answer("Отправьте картинку к посту")
+
+
 async def add_to_favorites(user_id,id):
     db_sess = db_session.create_session()
     anime = db_sess.query(Anime).filter(Anime.kodik_id == id).first()
@@ -408,6 +429,12 @@ async def ans(call):
         await bot.edit_message_reply_markup(call.from_user.id, call.message.message_id, reply_markup=generate_inline_keyboard(['❌ Выключить уведомления','unsubscribe']))
         await call.answer('Вы успешно включили уведомления')
         await subscribe(message)
+    elif call.data == 'skip':
+        await bot.edit_message_reply_markup(call.from_user.id, call.message.message_id, reply_markup= generate_inline_keyboard(['✅ Включить уведомления','subscribe']))
+        await call.answer('Вы успешно отключили уведомления')
+        await unsubscribe(message)
+    elif call.data == 'finish':
+        pass
     elif call.data == 'cancel':
         await call.answer('Отменено')
         await cancel_handler()
