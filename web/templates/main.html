@@ -434,6 +434,20 @@ const disableDarkMode = () => {
           });
     })();
   </script>
+  <script>
+    if (document.cookie){
+        console.log(document.cookie)
+        let cookieValue = document.cookie
+          .split('; ')
+          .find(row => row.startsWith('theme='))
+          .split('=')[1];
+        console.log(cookieValue)
+        if (cookieValue == 'white'){
+          document.body.classList.remove("dark"),
+          document.body.classList.add("white")
+        }
+      }
+  </script>
   <script async src="https://usocial.pro/usocial/usocial.js?uid=e2d894c136f61295&v=6.1.5" data-script="usocial" charset="utf-8"></script>
 
 </body>
