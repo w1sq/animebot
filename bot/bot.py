@@ -23,6 +23,7 @@ searcher =  Searcher()
 
 with open('bot/key.txt','r') as file:
     API_KEY = file.readline()
+API_KEY = '1830436157:AAG6oDBAU9X3WL3nZdqdZKlKVyPzOPwljaQ'
 logging.basicConfig(level=logging.INFO, filename='botlogs.log')
 bot = Bot(token=API_KEY)
 storage = MemoryStorage()

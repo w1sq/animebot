@@ -416,13 +416,11 @@
     })()
   </script>
   <script>
-    if (document.cookie){
-        console.log(document.cookie)
+    if (document.cookie){  
         let cookieValue = document.cookie
           .split('; ')
           .find(row => row.startsWith('theme='))
           .split('=')[1];
-        console.log(cookieValue)
         if (cookieValue == 'white'){
           document.body.classList.remove("dark"),
           document.body.classList.add("white")
