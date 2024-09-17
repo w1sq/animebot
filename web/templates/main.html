@@ -29,7 +29,7 @@
 
       <div class="user-info">
         <div class="info">
-          <a  href="https://t.me/animepointbot"  target="_blank">ANIMEPOINT</a>
+          <a  href="https://t.me/anipointbot"  target="_blank">ANIMEPOINT</a>
           <span>Telegram bot</span>
         </div>
       </div>
@@ -417,12 +417,10 @@
   </script>
   <script>
     if (document.cookie){
-        console.log(document.cookie)
         let cookieValue = document.cookie
           .split('; ')
           .find(row => row.startsWith('theme='))
           .split('=')[1];
-        console.log(cookieValue)
         if (cookieValue == 'white'){
           document.body.classList.remove("dark"),
           document.body.classList.add("white")

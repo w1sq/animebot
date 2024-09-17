@@ -9,19 +9,19 @@ SqlAlchemyBase = dec.declarative_base()
 __factory = None
 
 
-def global_init():
+def global_init(conn_str):
     global __factory
 
     if __factory:
         return
 
-    conn_str = 'postgresql+psycopg2://bot:Iamgood2005@127.0.0.1/bot'
-    print(f"Подключение к базе данных по адресу {conn_str}")
+    print(f"connecting to database: {conn_str}")
 
-    engine = sa.create_engine(conn_str)
+    engine = sa.create_engine(conn_str, pool_size=25)
     __factory = orm.sessionmaker(bind=engine)
 
     from . import __all_models
+
     SqlAlchemyBase.metadata.create_all(engine)
 
 

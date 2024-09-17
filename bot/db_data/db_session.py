@@ -15,13 +15,14 @@ def global_init():
     if __factory:
         return
 
-    conn_str = 'postgresql+psycopg2://bot:Iamgood2005@127.0.0.1/bot'
+    conn_str = "postgresql+psycopg2://bot:Iamgood2005@127.0.0.1/bot"
     print(f"connecting to database: {conn_str}")
 
-    engine = sa.create_engine(conn_str,pool_size=25)
+    engine = sa.create_engine(conn_str, pool_size=25)
     __factory = orm.sessionmaker(bind=engine)
 
     from . import __all_models
+
     SqlAlchemyBase.metadata.create_all(engine)
 
 

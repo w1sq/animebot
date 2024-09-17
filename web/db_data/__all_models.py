@@ -12,6 +12,7 @@ class Users(SqlAlchemyBase):
 
     id = sqlalchemy.Column(sqlalchemy.Integer, primary_key=True)
     notifications = sqlalchemy.Column(sqlalchemy.Boolean, default=False)
+    films = sqlalchemy.Column(sqlalchemy.Boolean, default=False)
     favorites = orm.relationship("Anime",
                     secondary=favorites_table,back_populates='user')
 
@@ -22,7 +23,6 @@ class Users(SqlAlchemyBase):
         return str(self.id)
 class Anime(SqlAlchemyBase,SerializerMixin):
     __tablename__ = "anime"
-
     id = sqlalchemy.Column(sqlalchemy.Integer, primary_key=True, autoincrement=True)
     kodik_id = sqlalchemy.Column(sqlalchemy.String,nullable=False)
     title = sqlalchemy.Column(sqlalchemy.String,nullable=False)
@@ -50,7 +50,7 @@ class Anime(SqlAlchemyBase,SerializerMixin):
 
 
     def to_message(self):
-                return f'''
+        return f'''
 {self.title}
 {self.title_orig}
 <u>{self.imdb_rating} {self.kinopoisk_rating} </u>
@@ -59,3 +59,70 @@ class Anime(SqlAlchemyBase,SerializerMixin):
 
 {self.description}
 '''
+
+
+class Anime_Title:
+    def __init__(self,data:dict) -> None:
+        self.kodik_id:str = data.get('id','')
+        self.shikimori_id = data.get('shikimori_id','')
+        self.title:str = data.get('title','')
+        self.orig:str = data.get('title_orig','')
+        self.iframe_link:str = data.get('link','')
+        if data.get('material_data','')!= '':
+            self.poster_link:str = data['material_data'].get('poster_url','')
+            self.status:str = data['material_data'].get('all_status','ongoing')
+            self.year:str = f"Год: {data.get('year','')}\n"
+            self.genres:str = f"Жанр: {', '.join(data['material_data'].get('genres',''))}\n"
+            self.actors:str = f"Актёры: {', '.join(data['material_data'].get('actors',''))}\n" 
+            self.directors:str = f"Режисер: {', '.join(data['material_data'].get('directors',''))}"
+            self.imdb_rating:str = f"IMDb: {data['material_data'].get('imdb_rating','')}"
+            self.kinopoisk_rating:str = f"| КиноПоиск: {data['material_data'].get('kinopoisk_rating','')}"
+            self.description:str = f'''Описание:\n{data['material_data'].get('description','')}
+    <a href="{data['material_data'].get('poster_url','')}">&#8205</a>
+----------------------------------------------------------------------
+    @animepointbot - Самая большая база с аниме мультфильмами и сериалами.'''
+        else:
+            self.poster_link:str = ''
+            self.status:str = 'ongoing'
+            self.year:str = f"Год: {data.get('year','')}\n"
+            self.genres:str = "Жанр: \n"
+            self.actors:str = "Актёры: \n" 
+            self.directors:str = "Режисер: "
+            self.imdb_rating:str = f"IMDb: "
+            self.kinopoisk_rating:str = f"| КиноПоиск: "
+            self.description:str = f'''Описание:\n
+----------------------------------------------------------------------
+    @animepointbot - Самая большая база с аниме мультфильмами и сериалами.'''
+
+
+class FilmTitle:
+    def __init__(self,data:dict) -> None:
+        self.id:str = data.get('id','')
+        self.title:str = data.get('name','')
+        self.orig:str = data.get('origin_name','')
+        self.iframe_link:str = data.get('iframe_url','')
+        self.poster_link:str = data.get('poster','')
+        self.year:str = f"Год: {data.get('year','')}\n"
+        self.imdb_rating:str = f"IMDb: {data.get('imdb','')}"
+        self.kinopoisk_rating:str = f"| КиноПоиск: {data.get('kinopoisk','')}"
+        self.description:str = f'''
+<a href="{data.get('poster ','')}">&#8205</a>
+----------------------------------------------------------------------
+@animepointbot - Самая большая база с аниме мультфильмами и сериалами.'''
+
+    def to_message(self):
+        return f'''
+{self.title}
+{self.orig}
+<u>{self.imdb_rating} {self.kinopoisk_rating} </u>
+
+{self.year}
+
+{self.description}
+'''
+    
+    def __str__(self):
+        return self.title
+
+    def __repr__(self):
+        return self.title
